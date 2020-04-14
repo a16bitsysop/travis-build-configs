@@ -9,3 +9,4 @@ addons:
       key_url: 'https://download.docker.com/linux/ubuntu/gpg'
     packages:
     - docker-ce-cli
+    - pass
