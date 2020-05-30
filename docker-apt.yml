@@ -1,11 +1,11 @@
 os: linux
-dist: bionic
+dist: focal
 language: minimal
 
-addons:
-  apt:
-    sources:
-    - sourceline: 'deb https://download.docker.com/linux/ubuntu bionic stable'
-      key_url: 'https://download.docker.com/linux/ubuntu/gpg'
-    packages:
-    - docker-ce-cli
+#addons:
+#  apt:
+#    sources:
+#    - sourceline: 'deb https://download.docker.com/linux/ubuntu bionic stable'
+#      key_url: 'https://download.docker.com/linux/ubuntu/gpg'
+#    packages:
+#    - docker-ce-cli
