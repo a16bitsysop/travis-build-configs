@@ -7,7 +7,7 @@ install:
       mkdir $HOME/.docker
       echo '{"experimental": "enabled"}' > $HOME/.docker/config.json
       cat $HOME/.docker/config.json
-      sudo service docker reload
+      sudo service docker restart
 #addons:
 #  apt:
 #    sources:
