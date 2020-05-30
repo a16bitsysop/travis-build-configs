@@ -1,11 +1,6 @@
-language: ruby
-
-services:
-  - docker
-
-#os: linux
-#dist: focal
-#language: minimal
+os: linux
+dist: focal
+language: minimal
 
 #addons:
 #  apt:
