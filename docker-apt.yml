@@ -5,7 +5,7 @@ language: minimal
 install:
   - |
       mkdir $HOME/.docker
-      echo '{experimental: enabled}' > $HOME/docker/config.json
+      echo '{"experimental": "enabled"}' > $HOME/.docker/config.json
       cat $HOME/.docker/config.json
 
 #addons:
