@@ -3,9 +3,10 @@ dist: focal
 language: minimal
 
 install:
-  - mkdir ~/.docker
-  - echo '{"experimental": "enabled"}' > ~/docker/config.json
-  - cat ~/.docker/config.json
+  -|
+      mkdir ~/.docker
+      echo '{"experimental": "enabled"}' > ~/docker/config.json
+      cat ~/.docker/config.json
 
 #addons:
 #  apt:
