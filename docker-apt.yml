@@ -4,9 +4,9 @@ language: minimal
 
 install:
   - |
-      mkdir ~/.docker
-      echo '{experimental: enabled}' > ~/docker/config.json
-      cat ~/.docker/config.json
+      mkdir $HOME/.docker
+      echo '{experimental: enabled}' > $HOME/docker/config.json
+      cat $HOME/.docker/config.json
 
 #addons:
 #  apt:
