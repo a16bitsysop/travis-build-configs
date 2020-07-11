@@ -15,5 +15,5 @@ before_install:
   - |
       if [ -d "travis-helpers" ]; then
         find travis-helpers -maxdepth 1 -executable -type f -exec cp '{}' ~/bin/ \;
-        python3 -m pip install docker natsort
+        python3 -m pip install docker natsort bs4
       fi
