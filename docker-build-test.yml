@@ -19,4 +19,5 @@ before_install:
       fi
 
 after_success:
+  - docker image ls
   - docker push $IMAGE_NAME
