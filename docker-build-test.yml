@@ -19,6 +19,3 @@ before_install:
         python3 -m pip install docker natsort bs4
       fi
 
-after_success:
-  - docker image ls
-  - docker push $IMAGE_NAME
