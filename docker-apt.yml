@@ -2,15 +2,11 @@ os: linux
 dist: focal
 language: minimal
 
-env:
-  global:
-    - BUILDXVER=0.4.2
-
 before_install:
   - |
       mkdir -p ~/.docker/cli-plugins
       echo '{"experimental":"enabled"}' >> ~/.docker/config.json
-  - wget -qO ~/.docker/cli-plugins/docker-buildx https://github.com/docker/buildx/releases/download/v"$BUILDXVER"/buildx-v"$BUILDXVER".linux-amd64
+  - wget -qO ~/.docker/cli-plugins/docker-buildx https://github.com/docker/buildx/releases/download/v0.4.2/buildx-v0.4.2.linux-amd64
   - wget -qO ~/bin/scan.sh https://raw.githubusercontent.com/lukebond/microscanner-wrapper/master/scan.sh
   - chmod a+x ~/bin/scan.sh ~/.docker/cli-plugins/docker-buildx
   - sudo service docker restart
