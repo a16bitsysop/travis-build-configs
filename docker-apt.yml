@@ -10,8 +10,7 @@ before_install:
       echo '{"experimental":"enabled"}' >> ~/.docker/config.json
   - BUILDX=0.5.1
   - wget -qO ~/.docker/cli-plugins/docker-buildx https://github.com/docker/buildx/releases/download/v"$BUILDX"/buildx-v"$BUILDX".linux-amd64
-  - wget -qO ~/bin/scan.sh https://raw.githubusercontent.com/lukebond/microscanner-wrapper/master/scan.sh
-  - chmod a+x ~/bin/scan.sh ~/.docker/cli-plugins/docker-buildx
+  - chmod a+x ~/.docker/cli-plugins/docker-buildx
   - sudo service docker restart
   - docker run --rm --privileged multiarch/qemu-user-static --reset -p yes
   - docker buildx create --use
